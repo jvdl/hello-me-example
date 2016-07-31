@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is an example</title>
+</head>
+<body>
+    <h1>Hello <span id="who">world</span></h1>
+    <button id="prompter">Click me</button>
+    
+    <script>
+    
+        document.getElementById('prompter').addEventListener('click', function() {
+            var name = window.prompt('Please enter your name', 'John Smith');
+            window.alert('Your name is ' + name);
+            document.getElementById('who').textContent = name;
+        });
+    </script>
+</body>
+</html>
